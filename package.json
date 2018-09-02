@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Rosines-Almeida/rsa-validatorcard/issues"
   },
-  "homepage": "https://github.com/Rosines-Almeida/rsa-validatorcard#readme"
+  "homepage": "https://github.com/Rosines-Almeida/rsa-validatorcard#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
 }
