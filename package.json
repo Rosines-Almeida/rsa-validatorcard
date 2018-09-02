@@ -1,0 +1,19 @@
+{
+  "name": "rsa-validatorcard",
+  "version": "1.0.0",
+  "description": "validar cartão ",
+  "main": "index.js",
+  "scripts": {
+    "test": "cardValidator()"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rosines-Almeida/rsa-validatorcard.git"
+  },
+  "author": "rosinesalmeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rosines-Almeida/rsa-validatorcard/issues"
+  },
+  "homepage": "https://github.com/Rosines-Almeida/rsa-validatorcard#readme"
+}
