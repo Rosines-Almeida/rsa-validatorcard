@@ -10,8 +10,8 @@
 Exemplo de uso:
 ```
 $node
-> let cred = require ('rsa-validatorcard
-> cred('dsadsa'); // 'O texto dígitado é uma string'
+> card = require ('rsa-validatorcard')//{ cardValidator: [Function: cardValidator] }
+> card.cardValidator('test'); // 'O texto digitado é uma string'
 ```
 ## versão 1.0.2
 - funcionalidades: validar o número do cartão de crédito;
