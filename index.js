@@ -1,31 +1,22 @@
-const numberCard = {};
-
-module.exports.cardValidator  = function cardValidator  (numberCard) {  
-      if (numberCard !== "" && Number.isInteger(parseInt(numberCard))) {
-        var sum = 0;
-        var numdigits = numberCard.length;
-        var parity = numdigits % 2;
-        for(var i=0; i < numdigits; i++) {
-          var digit = parseInt(numberCard.charAt(i))
-          if(i % 2 == parity) digit *= 2;
-          if(digit > 9) digit -= 9;
-          sum += digit;
-        }
-        return (sum % 10) == 0;
-    if(total % 10 === 0){
-        if (suma === 0) {
-            return true;
-          } else {
-            return false;
-          }
-        };
-    } else {
-      return false;s
-    }
-}
-// exports.checkLuhn = function (numberCard) {
-   
  
-
-//    module.exports = validateData;
-//    module.exports = checkLuhn;
+   
+module.exports.cardValidator = function cardValidator(numberCard) {
+    if (!numberCard) {
+        throw new Error("Não há parametro");
+    }
+    if (typeof numberCard === "string") {
+        throw new Error("O texto dígitado é uma string");
+    }
+    if (numberCard.toString().length < 10) {
+        throw new Error("Números digitados menor do que o permetido");
+    }
+    else {
+        var suma = 0, digit = false;
+        var numberCard = String(numberCard).split("").reverse().forEach(function(numdigits ){ d = parseInt(numdigits);
+            suma += ((digit = !digit) ? d : (d < 5) ? d * 2 : (d - 5) * 2 + 1);
+        });
+        return (suma % 10 == 0);
+    }
+};
+        
+    
